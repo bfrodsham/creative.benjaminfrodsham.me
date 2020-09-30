@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Century Gothic", sans-serif;
+}
+
+.navbar {
+  border-bottom: 3px solid #31b6d5;
+}
+
+.navbar-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.background {
+  display:flex;
+  justify-content: center;
+  background-image: url("/images/knomi-mountain-woman-standing.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding-bottom: 40px;
+}
+
+.landing-page {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px;
+  width: 90%;
+  color: #ffffff;
+}
+
+.logo {
+  background: none;
+  margin: 100px;
+  width: 70%;
+}
+/* .logo h1 {
+  font-weight: 700;
+} */
+.logo h2 {
+  font-style: italic;
+}
+
+.button {
+  margin: 15px;
+  border: 3px solid #31b6d5;
+  border-radius: 7px;
+  background-color: #5bd4ff;
+  padding: 2px;
+  font-weight: 500;
+  display:flex;
+  width: 200px;
+  justify-content: center;
+}
+
+.button p {
+  margin-bottom: 0px;
+}
+
+footer {
+  border-top: 3px solid #31b6d5;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #f8f9fa;
+  padding: 10px;
+}
+footer p {
+  margin: 0;
+  font-style: italic;
+  font-size: 10px;
+}
+
+@media(max-width: 715px) {
+
+ .background {
+    height: 1000px;
+    overflow: hidden;
+  }
+
+  footer {
+
+  }
+}
