@@ -63,12 +63,6 @@
   margin-bottom: 0px;
 }
 
-.my-knowmi {
-  display: flex;
-  height: 800px;
-  align-items: stretch;
-  background-color: #e0e0e0;
-}
 
 .sidenav {
   height: 100%; /* Full-height: remove this if you want "auto" height */
@@ -105,6 +99,52 @@
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+
+.page {
+  width: 90%;
+  margin: 10px 10% 40px 10%;
+}
+
+.my-knowmi {
+  display: flex;
+  height: 800px;
+  align-items: stretch;
+  background-color: #e0e0e0;
+  width: 100%;
+  margin: 0;
+}
+
+.content {
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: flex-start
+}
+
+.content-text {
+  width: 45%;
+  height: auto;
+  padding: 10px;
+
+}
+
+.content-border {
+  padding: 5%;
+  border-left: 3px solid #ffa81d;
+}
+
+
+.image-border {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  margin: 5px;
+  width: 45%;
+  height: 100%;
+  border: 1px solid #5bd4ff;
+}
+
 
 
 footer {
