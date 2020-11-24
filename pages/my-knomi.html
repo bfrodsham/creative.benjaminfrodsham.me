@@ -35,16 +35,82 @@
   <div class="page my-knowmi">
 
     <div class="sidenav">
-      <a class ="button" href="#">Dashboard</a>
-      <a class ="button" href="#">Tracking</a>
-      <a class ="button" href="#">Report</a>
+      <!-- <a class ="button" href="#">Dashboard</a>
+      <a class ="button" href="#">Tracking</a> -->
+      <a class ="button" href="#">Diet Log</a>
+      <!-- <a class ="button" href="#">Report</a> -->
     </div>
 
-    <div class="interactive-window">
+    <!-- <div class="interactive-window">
 
       <h1>Knomi is under construction...</h1>
       <p>Come back later when it's done. You'll be glad you did!</p>
 
+    </div> -->
+
+    <div class="interactive-window">
+      <div class="content-border knomiPanel">
+        <h3>Macronutrient Totals</h3>
+        <table class="knomiTable">
+          <tr>
+            <th>Calories</th>
+            <th>Fat (g)</th>
+            <th>Protein (g)</th>
+            <th>Carbs (g)</th>
+          </tr>
+          <tr id="totalData">
+            <td id="calTotal">0</td>
+            <td id="fatTotal">0</td>
+            <td id="protTotal">0</td>
+            <td id="carbTotal">0</td>
+          </tr>
+        </table>
+      </div>
+      <div class="content-border knomiPanel">
+        <h3>Diet Log</h3>
+        <table class="knomiTable" id="dietLog">
+          <tr>
+            <th>Food Name</th>
+            <th>Calories</th>
+            <th>Fat (g)</th>
+            <th>Protein (g)</th>
+            <th>Carbs (g)</th>
+          </tr>
+        </table>
+      </div>
+      <div class="content-border knomiPanel">
+        <h3>Database Search</h3>
+
+        <form>
+          <label>Enter a food or recipe to find. The more specific you are, the more likely you'll find an accurate result. </label>
+          <br>
+          <input id="foodInput" type="text" size="50"></input>
+          <input id="foodSubmit" type="submit" value="Submit"></input>
+        </form>
+
+        <div class="results" id="results">
+          <h4>Results:</h4>
+          <table class="knomiTable">
+            <tr>
+              <th>Food Name</th>
+              <th>Calories</th>
+              <th>Fat (g)</th>
+              <th>Protein (g)</th>
+              <th>Carbs (g)</th>
+            </tr>
+            <tr id="foodResults">
+              <td id="foodName"></td>
+              <td id="foodCals"></td>
+              <td id="foodFats"></td>
+              <td id="foodProts"></td>
+              <td id="foodCarbs"></td>
+            </tr>
+          </table>
+
+          <input id='foodAdd' type='submit' value='Add to Log'></input>
+        </div>
+
+      </div>
     </div>
 
   </div>
@@ -58,10 +124,10 @@
 
   </footer>
 
-
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script text="type/javascript" src="/js/script.js"></script>
 
 </body>
 
